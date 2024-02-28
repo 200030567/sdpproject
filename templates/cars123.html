@@ -1,0 +1,32 @@
+{% extends 'Navbar.html' %}{% load static %}
+<html lang="en"><head>
+    <meta charset="UTF-8">
+  <title>Title</title>
+    <link href="//netted.bootstrap.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js">
+
+  </script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js">
+
+</script></head>
+{% block body %}
+<div class="card-group">
+  <div class="card">
+    <img src="{% static 'images/car1.jpeg' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+    </div>  </div>
+  <div class="card">
+    <img src="{% static 'images/car2.jpeg' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+    </div>  </div>
+  <div class="card">    <img src="{% static 'images/car3.jpeg' %}" class="card-img-top" alt="...">
+    <div class="card-body">      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+    </div>  </div>
+</div>{% endblock %}
+</html>
